@@ -18,9 +18,24 @@ VAEDecode = NODE_CLASS_MAPPINGS["VAEDecode"]()
 EmptyLatentImage = NODE_CLASS_MAPPINGS["EmptyLatentImage"]()
 
 with torch.inference_mode():
-    unet = UNETLoader.load_unet("z-image-turbo-fp8-e4m3fn.safetensors", "fp8_e4m3fn_fast")[0]
-    clip = CLIPLoader.load_clip("qwen_3_4b.safetensors", type="lumina2")[0]
-    vae = VAELoader.load_vae("ae.safetensors")[0]
+    # UNET (model utama)
+    unet = UNETLoader.load_unet(
+        "catCitronAnimeTreasure_ilV9.safetensors",
+        "default"
+    )[0]
+
+    # CLIP (text encoder)
+    clip = CLIPLoader.load_clip(
+        "model.safetensors"
+    )[0]
+
+    # VAE
+    vae = VAELoader.load_vae(
+        "vae-ft-mse-840000-ema-pruned.safetensors"
+    )[0]
+
+
+
 
 save_dir="./results"
 os.makedirs(save_dir, exist_ok=True)
