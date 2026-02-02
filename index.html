@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Puter Demo</title>
+  <script src="https://js.puter.com/v2/"></script>
+</head>
+<body>
+  <button onclick="chat()">Chat AI</button>
+
+  <script>
+    function chat() {
+      puter.ai.chat("Halo, kamu siapa?")
+        .then(res => {
+          alert(res);
+        });
+    }
+  </script>
+</body>
+</html>
