@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-19T00:00:00Z",
+  "apiKeys": [
+    "thk_live_quPyIsgE7sWpknmfjjK9gEBLg2TnOpTlDDHN-BN5ybwTwZASZhq2pqkakZrQ3G65",
+    "thk_live_u94D6b0eFcS7cV-1DahPMVwx5c9qARIMN25tcaMV5qh7lUn5pHVtLKGM_aDSgtbn",
+    "thk_live_uA0flpBOH7n0XShRSmv6U4RB2kKnk9c54v_B0GtmXyfiOtz4GmEUf6R44lbjDBEw",
+    "thk_live_XU5BwFGgAm1UC0WPaLguvt4H91JwPx-kB1O8CKhzUeXB2LIeuC82iIx-fpV8rvbu",
+    "thk_live_-ZRhj8_DQh-GnJVjoToIkxN1Sxk3Stybl1GTa2y50HeGsWwayu8c0X86aZ-1OGYM"
+  ],
+  "tavilyApiKeys": [
+    "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",
+    "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",
+    "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",
+    "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",
+    "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"
+  ],
+  "firecrawlApiKeys": [
+    "fc-5907ce646ee14101b90a30de043c8a1f",
+    "fc-99e685c34df3405b86a19abbe6eb64da"
+  ],
+  "model": "mimo-v2.6-flash:free",
+  "baseUrl": "https://tokenharbor.ai/v1/chat/completions",
+  "temperature": 0.7,
+  "maxCompletionTokens": 100024,
+  "topP": 1.0,
+  "systemPrompt": "Kamu adalah Pst Ai, asisten AI ramah dari PT Pratama Solusi Teknologi..."
+}
